@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main {
+      width: auto;
+      height: 160px;
+      background-color: #2d2d2d;
+      display: flex;
+      padding: 30px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 12px;
+    }
+
+    .cookie-info {
+      padding: 1px;
+      height: 50px;
+    }
+    .cookie-info p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: lighter;
+      color: white;
+      line-height: 1.7;
+      font-size: small;
+    }
+    .cookie-info a{
+      color: #e6dada;
+      text-decoration: none;
+      text-decoration: 2px underline gray;
+    }
+    .got-it-btn {
+      width: auto;
+      height: auto;
+      display: flex;
+      margin-left: 1px;
+    }
+    .got-it-btn button{
+      height: 40px;
+      width: 80px ;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      background:white;
+    }
+  </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="cookie-info">
+        <p>
+          This website uses cookies to ensure you get the best <br />
+          experience on our website . 
+
+          <a href="">Cookies Policy</a>
+        </p>
+      </div>
+      <div class="got-it-btn">
+        <button>GOT IT</button>
+      </div>
+    </main>
+  </body>
+</html>

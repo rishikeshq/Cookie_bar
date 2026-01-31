@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+   <style>
+     
+     /* learning css specifity */
+    /* what is specifity - simple term which tag has more importance or special/unique from other  will get  */
+   /* style        */
+
+   body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    gap: 100px;
+   } 
+   
+   #butt{
+     background-color: rgb(24, 172, 69);
+     border-radius: 12px;
+     width: 550px;
+     height: 5.4vh;
+     color: white ;  
+   }
+   
+   button{
+     background-color: rgb(242, 142, 12) !important;
+     border-radius: 12px;
+     width: 150px;
+     height: 5.4vh;
+     color: white ;  
+    }
+    .butt{
+      background-color: red;
+      border-radius: 23px !important;
+      height: 100px;
+    }
+    
+
+
+
+         
+
+   </style>
+<body>
+  <button id="butt" class="butt">Submit</button>
+</body>
+</html>
