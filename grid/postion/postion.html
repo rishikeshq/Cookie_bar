@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      
+
+      html {
+        /* considered as the root element inside the html document */
+        /* for the abosolut postioned element  if it does not have any ancesestor with not static postion property then the abosolute postion elements refrence point will be html (root) */
+
+        background-color: lightgreen;
+      }
+      body{
+        padding-top: 100px;
+      }
+      .container {
+        width: 600px;
+        height: 600px;
+        background-color: brown;
+      }
+      .box1 {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        position: relative; /*the refrence point for this element will be it orginal postion from there it can move top,left,down and right */
+        top: 400px;
+        left: 400px;
+       /* here we are using the relative position so because of that we cannnot use both top and bottom and it is also applicable for left and right only one */
+      }
+      .box2 {
+        background-color: rgb(252, 237, 237);
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        /* bottom:0px; */
+        right: 100px;
+        /* top:10px; */
+        /* left:300px; */
+      }
+      .box3 {
+        background-color: blueviolet;
+        width: 200px;
+        height: 100px;
+      }
+      .new-container{
+        background-color: cornflowerblue;
+        width: 500px;
+        height: 600px;
+        position:relative;
+        top: 100px;
+        }
+        .newchild{
+          width: 100px;
+          height: 100px;
+          position: absolute;
+        }
+        .newchild-1{
+          background-color: beige;
+          top: 400px;
+        }
+        .newchild-2{
+          background-color: rgb(209, 11, 149);
+          left: 300px;
+        }
+        .newchild-3{
+         background-color: rgb(16, 235, 16);
+         right: 0px;
+         bottom:0px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <!-- we are learning the postion property :- relative , fixed ,static, and absolute -->
+    <div class="container">
+      <div class="box1">box 1</div>
+      <div class="box2">box 2</div>
+      <div class="box3">box 3</div>
+      <img src="" alt="img">
+      <input type="">
+      <span>text</span>
+    </div>
+
+    <div class="new-container">
+      <div class="newchild newchild-1">1</div>
+      <div class="newchild newchild-2">2</div>
+      <div class="newchild newchild-3">3</div>
+    </div>
+  </body>
+</html>

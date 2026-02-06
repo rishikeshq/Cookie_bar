@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 100px auto;
+        width: 100%;
+        padding: 10px;
+        /* min-height: 100vh; */
+        background-color: lightseagreen;
+      }
+      .parent {
+        background-color: white;
+        height: 400px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .child{
+        width: 200px;
+       }
+      button{
+        position: absolute;
+        right: 100px;
+        top: 100px;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <section class="parent">
+      <div class="child">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo
+          distinctio praesentium harum eveniet quisquam beatae, tenetur
+          asperiores. Ea magni facilis in laudantium. Ea, ullam? Voluptatum
+          officiis aliquid libero quaerat!
+        </p>
+      </div>
+      <button>green</button>
+    </section>
+  </body>
+</html>

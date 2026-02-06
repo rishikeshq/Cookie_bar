@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      :root{
+        --bg-color:#16181d;
+        --font-color:white;
+        --anotherfont:rgb(165, 174, 192);
+      
+      
+      }
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Inter, sans-serif;
+      }
+      body{
+        /* background-color: #0458ff; */
+      }
+      nav{
+        /* border: 2px solid red; */
+        min-height: 101px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        /* margin-top: 10px; */
+        gap: 3px;
+        border-bottom: 0.1px solid rgb(37, 37, 37);
+        background-color: var(--bg-color);
+      }
+     nav .logo-wrapper-container{
+      display: flex;
+      gap: 10px;
+      padding-left: 10px;
+      line-height:1.19;
+      /* border:2px solid red; */
+      /* margin-top: 10px; */
+     }
+
+     .logo-wrapper-container .branding span{
+      color: var(--font-color);
+      font-size: 20px;
+      font-weight: 700;
+     }
+     .logo-wrapper-container .branding p{
+      font-size: 12px;
+      font-weight: 400;
+      color: rgb(142, 141, 141);
+
+     }
+     nav .cta-wrapper-container{
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding-left: 3px;
+      min-height: 57px;
+      margin-left: 8px;
+     }
+     .cta-wrapper{
+      border:none;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       width: 220px;
+       padding:3.1px;
+       height: 6.4vh;
+       border-radius:6px;
+       background-color: #42495e4e;
+     }
+     .cta-wrapper button{
+      width:110px;
+      height: 5.3vh;
+      font-size: 12px;
+      font-weight: bold;
+      color: rgb(214, 213, 213);
+      background-color: #42495e4e;  
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+     }
+     .cta-wrapper :first-child{
+      background-color: rgba(9, 128, 255, 0.808);
+     }
+     nav .cta-wrapper-container .darkmode-container{
+      width: 25px;
+      /* border: 2px solid red; */
+      display: flex;
+      padding-top: 5px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+     }
+
+     main{
+      background-color:#121417;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+      gap: 13px;
+     }
+     
+  .level-wrapper{
+    /* border: 2px solid red; */
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px ;
+    }
+    .level-info-wrapper{
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      /* border: 2px solid red; */
+      height: 4.5vh;
+      padding: px;
+      color: var(--font-color);
+
+    }
+    .level-info-wrapper button{
+      width: 80px;
+      height: 4.5vh;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(41, 41, 41);  
+      color: rgba(255, 255, 255, 0.932);
+     
+    }
+  .level-info-wrapper span{
+      font-size: 13px;
+      font-weight: bold;
+      font-weight: 400;
+      color:
+rgb(165, 174, 192)}
+    .forward-backward-wrapper{
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     gap: 5px;
+     width: 100px;
+     height: 5.9vh;
+    } 
+    .forward-backward-wrapper button{
+      width: 25px;
+      height: 4.3vh;
+    }
+   
+  .level-progress-bar-wrapper{
+    /* border: 2px solid red; */
+    height: 5.6vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  .level-progress-bar-wrapper .progress-bar{
+    width: 100%;
+    height: 1.4vh;
+    background-color: rgba(44, 55, 67, 0.658);
+    border-radius: 12px;
+  }
+  .progress-bar .progress-bar-inside{
+    width: 40vw;
+    height: inherit;
+    background-color: rgb(31, 82, 236);
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+  section{
+    background-color:#16181d;
+    border: 1px solid rgb(34, 32, 32);
+    border-radius: 11px;
+    padding:17px;
+    
+  }
+  .question-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* padding:px; */
+    height: 100px;
+    line-height: 1.8;
+}
+.question-wrapper h4{
+  color: var(--anotherfont);
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+}
+.question-wrapper p{
+  font-size:13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--anotherfont);
+}
+.flex-container-preview-header{
+  height:40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-container-preview-header h4{
+  color: var(--anotherfont);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.flex-container-preview-header button{
+  color: var(--anotherfont);
+  font-size: 12px;
+  font-style: normal;
+  font-weight:bolder;
+  background-color:var(--bg-color); 
+  border: none;
+  cursor: pointer;
+}
+.flex-container-preview-wrapper{
+  height: 45vh;
+  border: 1.5px dashed rgb(49, 49, 49);
+  background-color: hsl(220deg 18% 16% / 30%);
+  display: flex;
+  padding: 13px;
+  margin-top: 5px;
+  border-radius: 12px;
+}
+.flex-container-preview-wrapper .child{
+  width: 52px;
+  height: 52px;
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 16px;
+  color: var(--anotherfont);
+  font-weight: bold;
+  border: none;
+}
+.purple{
+  background-color:#9333ea;
+}
+.blue{
+  background-color:#2563eb ;
+}
+.green{
+  background-color:rgb(18, 159, 60);
+}
+
+
+.css-wrapper h5{
+  color: var(--anotherfont);
+}
+.css-code-wrapper{
+  background:hsl(220 15% 18% / 1);
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 2px solid red; */
+  
+ }
+ .css-code-wrapper code{
+  display:inline-block;
+  /* width: 100%; */
+  font-size: 13px;
+  font-weight:100;
+  font-family:"JetBrains Mono", monospace!important; 
+  color:white;
+  /* border: 2px solid red; */
+ }
+.flex-properties-wrapper{
+  color:var(--anotherfont);
+}
+ .flex-properties{
+  background-color: var(--anotherfont);
+  margin-top: 1px; 
+  border-radius: 3px;
+  color: var();
+  padding: 5px 10px;
+  background-color: hsl(220deg 18% 16% / 30%);
+}
+.flex-properties form{
+  /* border: 2px solid red; */
+  /* padding:px; */
+  color: rgb(148, 146, 146);
+  font-size: 12px;
+  font-weight: bold;
+}
+form div{
+  margin-top:12px;
+}
+form div input{
+  width: 100%;
+  height: 25px;
+  margin-top: 5px;
+  background-color:rgb(14, 15, 19);
+  border: 1px solid lightslategray;
+  border-radius: 4px;
+  padding-left: 5px;
+  /* font-weight:; */
+  font-size: 14px;
+}
+
+.your-progress-wrapper{
+  background-color: hsl(220deg 18% 16% / 30%);
+ /* border: 2px solid red; */
+ padding: 10px;
+}
+.your-progress-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid re;  
+  color: var(--font-color);
+}
+.your-progress-info h4{
+  font-size: 14px;
+}
+.your-progress-bar{
+  
+  width: 100%;
+  height: 9px;
+  background-color: var(--anotherfont);
+  border-radius: 7px;
+  margin-top: 10px;
+  
+}
+.your-progress-bar div{
+  /* border: 2px solid red; */
+  width:30%;
+  height: inherit;
+  background-color: rgba(26, 93, 239, 0.865);
+   border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    cursor: pointer;
+}
+.level-completed-wrapper span{
+  font-size: 12px;
+
+}
+.level-box-wrapper{
+  display: flex;
+  gap: 5px;
+  /* border: 2px solid red; */
+  justify-content: space-around;
+  /* overflow-x: hidden; */
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 20px;
+  min-height: 100px;
+}
+.level-box-wrapper .level-box{
+  width: 31px;
+  color: var(--anotherfont);
+  /* height:px; */
+  text-align: center;
+  padding-top: 7px;
+  height: auto;
+  background-color: var();
+  border-radius: 2px;
+  /* margin-top: 1; */
+
+}
+.level-box-wrapper .green-btn{
+ background-color:rgb(18, 159, 60) ;
+}
+/* @media screen and (min-width:500px){
+  body{
+    display: none;
+  }
+} */
+ 
+</style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-wrapper-container">
+          <img src="./favicon.png" width="32" height="36" alt="logo"/>
+          <div class="branding">
+            <span>FLEXBOX|CHAICODE</span>
+            <p>Learn Flexbox Interactively</p>
+          </div>
+        </div>
+        <div class="cta-wrapper-container">
+         <div class="cta-wrapper">
+            <button><i></i>Challenges</button>
+            <button><i></i>Sandbox</button>
+         </div>
+          <div class="darkmode-container"><i>*</i></div>
+        </div>
+      </nav>
+   </header>
+
+   <main>
+      <!-- level /20  -->
+      <div class="level-wrapper">
+        <div class="level-info-wrapper">
+          <button>Level 8 / 20</button>
+          <span>7 completed</span>       
+        </div>
+        <div class="forward-backward-wrapper">
+          <button><i><</i></button>
+          <button><i>></i></button>
+        </div>
+      </div>
+   <!-- progress-bar  -->
+     <div class="level-progress-bar-wrapper">
+      <div class="progress-bar">
+        <div class="progress-bar-inside"></div>
+      </div>
+     </div>
+
+     <section>
+      <div class="question-wrapper">
+        <h4><i></i>Center Everything</h4>
+        <p>Center all the items both horizontally and vertically in the container.</p>
+        <p><i>Hint</i>: <em>Combine coloumn direction with centering</em></p>
+      </div>
+     </section>
+
+     <section>
+
+       <div class="flex-container-preview-header">
+         <h4>FLEX CONTAINER PREVIEW</h4> 
+         <button><i></i>Reset</button>
+         </div>
+       
+       <div class="flex-container-preview-wrapper">
+         <div class="purple child">1</div>
+         <div class="blue child">2</div>
+         <div class="green child">3</div>
+       </div>
+     </section>
+
+     <section>
+      <div class="css-wrapper">
+        <h5>GENERATED CSS</h5>
+      
+         <pre class="css-code-wrapper ">
+          <code>
+          .container { 
+              display: flex;
+              flex-direction: row;
+              justify-content:flex-start;
+              align-items: stretch;
+              flex-wrap: nowrap;
+              align-content: stretch;
+              gap: 0;
+            }
+          </code>
+          </pre>
+          
+      </div>
+     </section>
+     
+     <section>
+      <div class="flex-properties-wrapper">
+        <h4>flex-Properties</h4>
+
+        <div class="flex-properties">
+          <form action="">
+           <div>
+              <label for="">flex-direction</label>
+              <br>
+              <input type="text" placeholder="flex-direction">
+           </div>
+             
+           <div>
+              <label for="">justify-content</label>
+              <br>
+              <input type="text" placeholder="justify-content">
+           </div>
+
+          <div>
+              <label for="">align-items</label>
+              <br>
+              <input type="text" placeholder="align-items">
+          </div>
+
+            <div>
+              <label for="">align-content</label>
+              <br>
+              <input type="text" placeholder="align-content">
+            </div>
+
+            <div>
+              <label for="">gap</label>
+              <br>
+              <input type="text" placeholder="gap">
+            </div>
+           <div>
+              <label for="">flex-wrap</label>
+              <br>
+              <input type="text" placeholder=" flex-wrap">
+           </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="your-progress-wrapper">
+        <div class="your-progress-info">
+          <h4>Your progress</h4>
+        <div class="level-completed-wrapper">
+            <span>Completed</span>
+            <span>7/20</span>
+            </div>
+        </div>
+          <div class="your-progress-bar">
+            <!-- progress-bar -->
+             <div></div>
+          </div>
+          <div class="level-box-wrapper">
+            <div class="level-box green-btn">1</div>
+            <div class="level-box green-btn">2</div>
+            <div class="level-box green-btn">3</div>
+            <div class="level-box green-btn">4</div>
+            <div class="level-box green-btn">5</div>
+            <div class="level-box green-btn">6</div>
+            <div class="level-box green-btn">7</div>
+            <div class="level-box">8</div>
+            <div class="level-box">9</div>
+            <div class="level-box">10</div>
+            <div class="level-box">11</div>
+            <div class="level-box">12</div>
+            <div class="level-box">13</div>
+            <div class="level-box">14</div>
+            <div class="level-box">15</div>
+            <div class="level-box">16</div>
+            <div class="level-box">17</div>
+            <div class="level-box">18</div>
+            <div class="level-box">19</div>
+            <div class="level-box">20</div>
+          </div>
+      </div>
+    </section>
+   </main>
+  </body>
+</html>
